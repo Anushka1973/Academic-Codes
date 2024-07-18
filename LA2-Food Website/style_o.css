@@ -1,0 +1,114 @@
+body{
+    font-family:serif;
+    color: rgb(241, 237, 237);
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65),rgba(0,0,0,0.38),rgba(0,0,0,0))
+    ,url(foodd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    float: right;
+}
+
+.content{
+    text-align: center;
+    padding-top: 0%;
+    width: 800px;
+    height: 639px;
+    float: right;
+}
+
+.content h2{
+    padding-top: 100px ;
+    padding-bottom: 50px;
+    animation: stampAnimation 3s ease-in-out;
+}
+
+.content h3{
+    letter-spacing: 2px;
+    line-height: 40px;
+    animation: stampAnimation 3s ease-in-out;
+}
+.wd{
+    width: 300px;
+    height: 539px;
+    background-color: black;
+    opacity:0.9;
+    padding:55px ;
+}
+
+.wd h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100px;
+    margin: 30PX AUTO;
+    animation: slide-in 1s ease-in-out;
+    
+}
+.wd h1:hover{
+    text-shadow: 2px 2px 2px rosybrown;
+}
+
+.wd h4{
+    text-align: center;
+    margin: 40px auto;
+    animation: slide-in 1s ease-in-out;
+    color: darkgray;
+    letter-spacing: 5px;
+}
+
+.wd h4:hover{
+    text-shadow: 2px 2px 2px rosybrown;
+}
+.wd h3{
+    text-align: center;
+    color: darkgray;
+    font-weight:normal;
+    animation: slide-in 1s ease-in-out;
+}
+
+.wd h3:hover{
+    text-shadow: 2px 2px 2px rosybrown;
+}
+
+.wd h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin:40px auto;
+    animation: slide-in 1s ease-in-out;
+    line-height: 30px;
+
+}
+
+.wish h3{
+    text-align: center;
+    color: darkgray;
+    font-weight:normal;
+    animation: stampAnimation 3s ease-in-out infinite;
+    text-transform: capitalize;
+}
+
+.wish h3:hover{
+    text-shadow: 2px 2px 2px rosybrown;
+}
+@keyframes stampAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
